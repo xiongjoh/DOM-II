@@ -45,6 +45,13 @@ window.addEventListener('scroll', () => {
     logoHeading.textContent = 'Death Bus'
 })
 
+// resize
+window.addEventListener('resize', () => {
+    logoHeading.style.color = 'red'
+    logoHeading.style.fontWeight = 'bolder'
+})
+
+// keydown
 
 
 // prevent default for nav links
