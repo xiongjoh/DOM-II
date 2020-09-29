@@ -36,3 +36,11 @@ adventureImg.addEventListener('mousedown', (event) => {
 adventureImg.addEventListener('error', (event) => {
     event.target.alt = 'PICTURE UNABLE TO LOAD'
 })
+
+// scroll event
+
+const logoHeading = document.querySelector('.logo-heading')
+
+window.addEventListener('scroll', () => {
+    logoHeading.textContent = 'Death Bus'
+})
