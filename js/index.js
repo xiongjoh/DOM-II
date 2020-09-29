@@ -52,6 +52,16 @@ window.addEventListener('resize', () => {
 })
 
 // keydown
+document.addEventListener('keydown', (event) => {
+    console.log(event)
+    if (event.key === '`') {
+        alert('Secret key pressed')
+        logoHeading.textContent = 'Fun Bus'
+        logoHeading.style.color = 'black'
+        logoHeading.style.fontWeight = 'initial'
+    }
+})
+
 
 
 // prevent default for nav links
