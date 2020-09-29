@@ -44,3 +44,10 @@ const logoHeading = document.querySelector('.logo-heading')
 window.addEventListener('scroll', () => {
     logoHeading.textContent = 'Death Bus'
 })
+
+
+
+// prevent default for nav links
+Array.from(document.querySelectorAll('.nav a')).forEach(element => element.addEventListener('click', event => {
+    event.preventDefault()
+  }))
