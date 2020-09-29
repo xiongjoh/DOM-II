@@ -62,6 +62,30 @@ document.addEventListener('keydown', (event) => {
     }
 })
 
+// nested events
+const contentPick = document.querySelector('.content-pick')
+const destination2 = document.querySelector('.destination:nth-of-type(2)')
+
+contentPick.addEventListener('click', () => {
+    if (contentPick.style.backgroundColor === 'lightgrey')
+    {
+        contentPick.style.backgroundColor = 'white'
+    }
+    else {
+        contentPick.style.backgroundColor = 'lightgrey'
+    }
+
+})
+destination2.addEventListener('click', (event) => {
+    event.stopPropagation()
+    if (destination2.style.backgroundColor === 'darkgrey')
+    {
+        destination2.style.backgroundColor = 'initial'
+    }
+    else {
+        destination2.style.backgroundColor = 'darkgrey'
+    }
+})
 
 
 // prevent default for nav links
